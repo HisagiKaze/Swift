@@ -10,9 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var compte:Int?
+    
+    @IBOutlet weak var compteurLabel: UILabel!
+    
+    @IBAction func incrementer(_ sender: UIBarButtonItem) {
+        compte! += 1
+        compteurLabel.text = "\(compte!)"
+    }
+    
+    @IBAction func decrementer(_ sender: UIBarButtonItem) {
+        compte! -= 1
+        compteurLabel.text = "\(compte!)"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        compte = 0
     }
 
     override func didReceiveMemoryWarning() {
