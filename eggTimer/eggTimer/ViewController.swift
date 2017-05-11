@@ -8,14 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    var pickerInfo: [String] = []
 
     //Outlets
     @IBOutlet weak var minuteurLabel: UILabel!
     
     @IBOutlet weak var activerMinuteurBtn: UIButton!
     
-    @IBOutlet weak var pickerViewCuisson: UIPickerView!
+    @IBOutlet weak var pickerView: UIPickerView!
     
     //Buttons
     @IBAction func activerMinuteurAction(_ sender: UIButton) {
@@ -26,14 +28,33 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //dataSource & Delegate
+        pickerView.dataSource = self
+        pickerView.delegate = self
+        
+        for i in 0...8 {
+            let row = "option \(i)"
+            pickerInfo.append(row)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //MARK - PickerViewDataSource
+    
+    // returns the number of 'columns' to display.
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    
+    // returns the # of rows in each component..
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerInfo.count
     }
 
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerInfo[row]
+    }
 
 }
 
