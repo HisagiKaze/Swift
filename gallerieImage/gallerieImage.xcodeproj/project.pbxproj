@@ -12,6 +12,12 @@
 		EDB5AFBB1EC502010068D310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB5AFB91EC502010068D310 /* Main.storyboard */; };
 		EDB5AFBD1EC502010068D310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB5AFBC1EC502010068D310 /* Assets.xcassets */; };
 		EDB5AFC01EC502010068D310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB5AFBE1EC502010068D310 /* LaunchScreen.storyboard */; };
+		EDB5AFC81EC504B20068D310 /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = EDB5AFC71EC504B20068D310 /* lion.png */; };
+		EDB5AFCA1EC507C50068D310 /* canyon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDB5AFC91EC507C50068D310 /* canyon.png */; };
+		EDB5AFD01EC5089D0068D310 /* concert.png in Resources */ = {isa = PBXBuildFile; fileRef = EDB5AFCC1EC5089D0068D310 /* concert.png */; };
+		EDB5AFD11EC5089D0068D310 /* esb.png in Resources */ = {isa = PBXBuildFile; fileRef = EDB5AFCD1EC5089D0068D310 /* esb.png */; };
+		EDB5AFD21EC5089D0068D310 /* sommet.png in Resources */ = {isa = PBXBuildFile; fileRef = EDB5AFCE1EC5089D0068D310 /* sommet.png */; };
+		EDB5AFD31EC5089D0068D310 /* voiture.png in Resources */ = {isa = PBXBuildFile; fileRef = EDB5AFCF1EC5089D0068D310 /* voiture.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		EDB5AFBC1EC502010068D310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDB5AFBF1EC502010068D310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDB5AFC11EC502010068D310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB5AFC71EC504B20068D310 /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
+		EDB5AFC91EC507C50068D310 /* canyon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canyon.png; sourceTree = "<group>"; };
+		EDB5AFCC1EC5089D0068D310 /* concert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = concert.png; sourceTree = "<group>"; };
+		EDB5AFCD1EC5089D0068D310 /* esb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esb.png; sourceTree = "<group>"; };
+		EDB5AFCE1EC5089D0068D310 /* sommet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sommet.png; sourceTree = "<group>"; };
+		EDB5AFCF1EC5089D0068D310 /* voiture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voiture.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 		EDB5AFB41EC502010068D310 /* gallerieImage */ = {
 			isa = PBXGroup;
 			children = (
+				EDB5AFCB1EC508770068D310 /* Images */,
 				EDB5AFB51EC502010068D310 /* AppDelegate.swift */,
 				EDB5AFB71EC502010068D310 /* ViewController.swift */,
 				EDB5AFB91EC502010068D310 /* Main.storyboard */,
@@ -62,6 +75,19 @@
 				EDB5AFC11EC502010068D310 /* Info.plist */,
 			);
 			path = gallerieImage;
+			sourceTree = "<group>";
+		};
+		EDB5AFCB1EC508770068D310 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EDB5AFCC1EC5089D0068D310 /* concert.png */,
+				EDB5AFCD1EC5089D0068D310 /* esb.png */,
+				EDB5AFCE1EC5089D0068D310 /* sommet.png */,
+				EDB5AFCF1EC5089D0068D310 /* voiture.png */,
+				EDB5AFC71EC504B20068D310 /* lion.png */,
+				EDB5AFC91EC507C50068D310 /* canyon.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +122,6 @@
 				TargetAttributes = {
 					EDB5AFB11EC502010068D310 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = DCTR467MBR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,7 +150,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB5AFC01EC502010068D310 /* LaunchScreen.storyboard in Resources */,
+				EDB5AFC81EC504B20068D310 /* lion.png in Resources */,
+				EDB5AFD21EC5089D0068D310 /* sommet.png in Resources */,
+				EDB5AFD11EC5089D0068D310 /* esb.png in Resources */,
+				EDB5AFD31EC5089D0068D310 /* voiture.png in Resources */,
+				EDB5AFD01EC5089D0068D310 /* concert.png in Resources */,
 				EDB5AFBD1EC502010068D310 /* Assets.xcassets in Resources */,
+				EDB5AFCA1EC507C50068D310 /* canyon.png in Resources */,
 				EDB5AFBB1EC502010068D310 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DCTR467MBR;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = gallerieImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulaurianpoinot.gallerieImage;
@@ -276,7 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DCTR467MBR;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = gallerieImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulaurianpoinot.gallerieImage;
