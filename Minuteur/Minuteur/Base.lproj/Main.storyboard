@@ -51,10 +51,10 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf8-pW-MOq">
-                                <rect key="frame" x="137.5" y="282" width="100" height="104"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf8-pW-MOq">
+                                <rect key="frame" x="62.5" y="282" width="250" height="104"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Aga-J9-lA3"/>
+                                    <constraint firstAttribute="width" constant="250" id="Aga-J9-lA3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="87"/>
                                 <nil key="textColor"/>

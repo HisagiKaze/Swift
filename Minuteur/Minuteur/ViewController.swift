@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
     var compteur:Timer?
-    var i:Int?
+    var i:Int = 0
+    var lecteur:AVAudioPlayer = AVAudioPlayer()
 
     @IBOutlet weak var compteurLabel: UILabel!
     
     @IBAction func stopAction(_ sender: UIBarButtonItem) {
         compteur?.invalidate()
         i = 0
-        compteurLabel.text = "0"
+        compteurLabel.text = "00:00"
     }
     
     @IBAction func pauseAction(_ sender: UIBarButtonItem) {
@@ -34,13 +36,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         compteur = Timer()
-        i = 0
+        let fichierSon = Bundle.main.path(forResource: "bip", ofType: "mp3")
     }
     
     func incrementerCompteur() {
     
-        i! += 1
-        compteurLabel.text = "\(i!)"
+        i += 1
+        compteurLabel.text = "\(i)"
+        var timeStr:String?
+        
+        let minutes = i / 60 % 60
+        let secondes = i % 60
+        
+        timeStr = String(format: "%02i:%02i", minutes, secondes)
+        compteurLabel.text = timeStr
     }
 
 
