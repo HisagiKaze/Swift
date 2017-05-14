@@ -21,43 +21,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3IH-qm-ZgE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="EggTimer" id="ovr-9r-O2T"/>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKf-rw-ZhA">
-                                <rect key="frame" x="87.5" y="187" width="200" height="85"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="EF8-mn-DLJ"/>
-                                    <constraint firstAttribute="width" constant="200" id="Xbf-Mv-KdS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="66"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="sNg-Vs-wOh">
-                                <rect key="frame" x="70" y="280" width="235" height="60"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="sNg-Vs-wOh">
+                                <rect key="frame" x="70" y="303.5" width="235" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HH-d5-qGi">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HH-d5-qGi">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="lhK-Rz-3vA"/>
                                         </constraints>
                                         <state key="normal" title="Démarrer"/>
                                         <connections>
-                                            <action selector="activerMinuteurAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nwE-Dk-b4X"/>
+                                            <action selector="activerMinuteurAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfQ-JZ-tWy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ew-E7-uTG">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ew-E7-uTG">
                                         <rect key="frame" x="135" y="0.0" width="100" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="Cms-s9-dM5"/>
                                         </constraints>
                                         <state key="normal" title="Arreter"/>
                                         <connections>
-                                            <action selector="resetMinuteurAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4JZ-Lg-D21"/>
+                                            <action selector="resetMinuteurAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhf-uz-8fs"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -75,24 +59,32 @@
                                     <constraint firstAttribute="height" constant="230" id="u0T-2F-3n2"/>
                                 </constraints>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKf-rw-ZhA">
+                                <rect key="frame" x="39.5" y="214" width="296" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="296" id="FQ3-MQ-nUM"/>
+                                    <constraint firstAttribute="height" constant="79" id="lkw-xp-mMg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="66"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sNg-Vs-wOh" firstAttribute="top" secondItem="LKf-rw-ZhA" secondAttribute="bottom" constant="50" id="082-d6-LgM"/>
-                            <constraint firstItem="LKf-rw-ZhA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5JJ-9L-nvZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MAB-zr-0b1" secondAttribute="bottom" id="Es3-6A-IVY"/>
+                            <constraint firstItem="sNg-Vs-wOh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TFg-1F-TCJ"/>
+                            <constraint firstItem="LKf-rw-ZhA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="UwL-yk-qVs"/>
                             <constraint firstItem="MAB-zr-0b1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aix-kH-vgA"/>
-                            <constraint firstItem="LKf-rw-ZhA" firstAttribute="top" secondItem="3IH-qm-ZgE" secondAttribute="bottom" constant="188" id="eke-fc-QtF"/>
                             <constraint firstAttribute="trailing" secondItem="MAB-zr-0b1" secondAttribute="trailing" id="j2D-Ou-GJZ"/>
+                            <constraint firstItem="LKf-rw-ZhA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oKw-A9-nmC"/>
                             <constraint firstItem="sNg-Vs-wOh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yiY-u5-sUS"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="activerMinuteurBtn" destination="7HH-d5-qGi" id="7BG-u7-1eF"/>
-                        <outlet property="minuteurLabel" destination="LKf-rw-ZhA" id="Otn-Qi-KyA"/>
-                        <outlet property="pickerViewCuisson" destination="MAB-zr-0b1" id="Khc-zK-yOI"/>
-                        <outlet property="startMinuteur" destination="7HH-d5-qGi" id="W9b-Tj-epu"/>
-                        <outlet property="stopMinuteurAction" destination="4ew-E7-uTG" id="LhS-V6-OxO"/>
+                        <outlet property="activerMinuteurBtn" destination="7HH-d5-qGi" id="KX6-cS-rSy"/>
+                        <outlet property="minuteurLabel" destination="LKf-rw-ZhA" id="mgF-Lh-h5Y"/>
+                        <outlet property="pickerView" destination="MAB-zr-0b1" id="9II-Xe-bLZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
