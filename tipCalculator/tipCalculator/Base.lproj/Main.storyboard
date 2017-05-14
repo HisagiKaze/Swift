@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F71b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mw6-kE-xSI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.002026124275" green="0.71355488580000004" blue="0.0031437162920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Calculateur de pourboire" id="EnP-Dh-Hd2"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="€ 0.0" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="76f-WL-E9h">
+                                <rect key="frame" x="77.5" y="122" width="220" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="FJx-f7-kYe"/>
+                                    <constraint firstAttribute="height" constant="49" id="U4K-y6-b5X"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6iB-rl-mtB">
+                                <rect key="frame" x="77.5" y="224" width="220" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="2Ua-gg-Hc4"/>
+                                    <constraint firstAttribute="width" constant="220" id="tVb-hw-v8a"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                                <color key="tintColor" red="0.0020261242746518505" green="0.71355488578680204" blue="0.0031437162916183332" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ekt-Yg-Ksz">
+                                <rect key="frame" x="77.5" y="304" width="220" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="pAP-3f-bAW"/>
+                                    <constraint firstAttribute="height" constant="44" id="xZo-zl-ebq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-eF-ljb">
+                                <rect key="frame" x="77.5" y="356" width="220" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="6bP-Ui-wJU"/>
+                                    <constraint firstAttribute="height" constant="44" id="VBw-Vp-p2Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e1c-eF-ljb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Io-Qh-vzN"/>
+                            <constraint firstItem="Mw6-kE-xSI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7gI-0z-pi9"/>
+                            <constraint firstItem="76f-WL-E9h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CCn-TI-j3w"/>
+                            <constraint firstItem="e1c-eF-ljb" firstAttribute="top" secondItem="Ekt-Yg-Ksz" secondAttribute="bottom" constant="8" id="HLU-KF-Pj2"/>
+                            <constraint firstAttribute="trailing" secondItem="Mw6-kE-xSI" secondAttribute="trailing" id="JPs-BK-kqw"/>
+                            <constraint firstItem="Ekt-Yg-Ksz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RrG-bB-cvA"/>
+                            <constraint firstItem="6iB-rl-mtB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SGN-8a-36V"/>
+                            <constraint firstItem="76f-WL-E9h" firstAttribute="top" secondItem="Mw6-kE-xSI" secondAttribute="bottom" constant="58" id="SGU-o8-EgO"/>
+                            <constraint firstItem="6iB-rl-mtB" firstAttribute="top" secondItem="76f-WL-E9h" secondAttribute="bottom" constant="53" id="cHa-Wz-77j"/>
+                            <constraint firstItem="Ekt-Yg-Ksz" firstAttribute="top" secondItem="6iB-rl-mtB" secondAttribute="bottom" constant="52" id="iQo-Xf-uky"/>
+                            <constraint firstItem="Mw6-kE-xSI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kAa-oB-lx6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PourboireSegmentedControl" destination="6iB-rl-mtB" id="ifJ-9Z-Hab"/>
+                        <outlet property="montantFactureTextField" destination="76f-WL-E9h" id="Th4-c6-3XY"/>
+                        <outlet property="montantTotalLabel" destination="e1c-eF-ljb" id="0p8-56-b56"/>
+                        <outlet property="pourboireLabel" destination="Ekt-Yg-Ksz" id="eCZ-Z8-zy3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90.400000000000006" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
